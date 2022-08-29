@@ -134,6 +134,7 @@
 /* Fin index */
 /* Inicio Quienes */
 .quienes-somos {
+  background-color: #efffe2;
   display: flex;
   height: 80vh;
   flex-direction: row;
@@ -147,8 +148,8 @@
 }
 
 .img-quienes img {
-  height: 300px;
-  width: 400px;
+  height: 50vh;
+  width: 48vw;
 
 }
 
@@ -156,7 +157,7 @@
   font-family: 'Manrope', sans-serif;
   display: flex;
   justify-content: center;
-  width: 600px;
+  width: 40vw;
   flex-direction: column;
   margin-left: 0px;
   padding: 10px;
@@ -186,3 +187,28 @@
 /* Fin Clientes */
 /* Inicio contacto */
 /* Fin contacto */
+
+@media(max-width: 1000px){
+  .quienes-somos {
+  flex-direction: column;
+  height: 120vh;
+  }
+
+  .texto{
+    width: 80vw;
+  }
+}
+
+@media(max-width: 768px){
+  .quienes-somos{
+    height: 180vh;
+  }
+}
+
+
+@media(max-width: 420px){
+  .quienes-somos{
+    height: 210vh;
+  }
+
+}
