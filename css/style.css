@@ -3,12 +3,13 @@
 
 /* Incio header */
 .header-container{
-  background-color: #666;
+  background-color: #777;
 }
 
 .logo{
-  height: 90px;
-  width: 180px;
+  height: 100px;
+  width: 139px;
+  margin: 10px;
 }
 
 .header-container i{
@@ -20,18 +21,22 @@
   color: #eae0da;
   font-family: "Merriweather", serif;
   font-size: 18px;
+
+}
+
+.header-container ul a p{
+  margin-top: 7px;
 }
 
 .header-container ul a:hover{
   color: #ff8f1b;
-  font-size: 17px;
 }
 
 /* Fin header */
 /* Inicio footer */
 .footer {
   /* background-color: #374046cc; */
-  background-color: #666;
+  background-color: #777;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +47,7 @@
   font-weight: lighter;
   font-size: 13px;
   font-family: "Merriweather", serif;
-  padding-top: 12px;
+  padding-top: 9px;
 }
 
 .footer-links{
@@ -69,7 +74,10 @@
 .footer li {
   display: inline-block;
 }
-  
+
+.footer-links{
+  margin-top: 10px;
+}
 .footer li a {
   text-decoration: none;
   color: #eae0da;
@@ -80,7 +88,6 @@
   
 .footer li a:hover {
   color: #ff8f1b;
-  font-size: 22px;
 }
 
 /* Fin footer */
@@ -119,10 +126,10 @@
   font-family: 'Manrope', sans-serif;
   padding: 8px 12px;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 19px;
   border-radius: 10px;
   background-color: #ff8f1b;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 10px rgb(0 0 0 / 50%);
   cursor: pointer;
 }
@@ -134,23 +141,36 @@
 /* Fin index */
 /* Inicio Quienes */
 .quienes-somos {
-  background-color: #efffe2;
+  background-color: #f5f5f5;
   display: flex;
   height: 80vh;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
+.card-body{
+  padding: 16px 10px 5px 16px;
+}
 
+.by-quienes{
+  font-size: 1 px;
+}
 
-.img-quienes{
-  display: flex;
+.card-texto{
+  margin-bottom: 0;
+}
+
+.card-quienes-wan{
+  background-color: #ff00d2;
+}
+
+.card-quienes-lu{
+  background-color: #ff8f1b;
 }
 
 .img-quienes img {
   height: 50vh;
   width: 48vw;
-
 }
 
 .texto {
@@ -182,6 +202,63 @@
 }
 /* Fin Quienes */
 /* Inicio planes */
+
+.planes{
+  display: flex;
+  flex-direction: column;
+  margin: 60px 0px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.plan-emprendedores{
+  align-self: flex-start;
+  background-color: #ff00d2;
+  border: 1px solid black;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-integral{
+  align-self: center;
+  background-color: #e6d405;  
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.asesoria-emprendedores{
+  align-self: flex-end;
+  background-color: #aa53d7;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.servicios-adicionales{
+  align-self: center;
+  background-color: #f5edc6;  
+  padding: 9px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.planes ul{
+  display: inline-block;
+  text-align: center;
+}
+
+.planes ul li{
+  background-color: #fefefe;
+  border: 1px solid #ff8f1b ;
+}
+
+.servicios-adicionales ul li{
+  border: 1px solid #ccc;
+}
 /* Fin planes */
 /* Inicio clientes */
 /* Fin Clientes */
