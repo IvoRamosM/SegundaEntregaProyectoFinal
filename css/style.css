@@ -3,7 +3,7 @@
 
 /* Incio header */
 .header-container{
-  background-color: #777;
+  background-color: #6f6f6f;
 }
 
 .logo{
@@ -36,7 +36,7 @@
 /* Inicio footer */
 .footer {
   /* background-color: #374046cc; */
-  background-color: #777;
+  background-color: #6f6f6f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,10 +162,12 @@
 
 .card-quienes-wan{
   background-color: #ff00d2;
+  font-family: 'Manrope', sans-serif;
 }
 
 .card-quienes-lu{
   background-color: #ff8f1b;
+  font-family: 'Manrope', sans-serif;
 }
 
 .img-quienes img {
@@ -206,8 +208,9 @@
 .planes{
   display: flex;
   flex-direction: column;
-  margin: 60px 0px;
+  padding: 60px 70px;
   font-family: 'Manrope', sans-serif;
+  background-color: #f5f5f5;
 }
 
 .plan-emprendedores{
@@ -261,16 +264,43 @@
 }
 /* Fin planes */
 /* Inicio clientes */
-/* Fin Clientes */
-/* Inicio contacto */
-.div-form{
+
+ .clientes{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 240px 0;
+  background-color: #f5f5f5;
+}
+
+.clientes-img{
+  display: flex;
   align-items: center;
 }
 
+.img-c{
+  max-width: 100%;
+}
+
+.amadeo-img{
+  width: 250vw;
+  height: 10vh;
+} 
+/* Fin Clientes */
+/* Inicio contacto */
+/* .div-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.contacto-container{
+  background-color: #f5f5f5;
+  padding: 150px 0;
+}
+
 form{
-  margin: 49px 0 49px 0;
+  /* margin: 49px 0 49px 0; */
   background-color: #fff;
   border: 3px solid #ff8f1b;
   font-family: "Manrope", sans-serif;
@@ -278,7 +308,13 @@ form{
   color: #000;
 }
 
-.input-l{
+form .btn{
+  background-color: #ff8f1b;
+  border: #000 1px solid;
+  margin-top: 15px;
+}
+
+/* .input-l{
   width: 310px;
 }
 
@@ -292,6 +328,10 @@ form{
 .enviar{
   border-radius: 30%;
 }
+
+.limpiar{
+  border-radius: 20%;
+} */
 /* Fin contacto */
 
 @media(max-width: 1000px){
@@ -303,6 +343,10 @@ form{
   .texto{
     width: 80vw;
   }
+
+  .clientes{
+    flex-direction: column;
+}
 }
 
 @media(max-width: 768px){
@@ -317,4 +361,14 @@ form{
     height: 210vh;
   }
 
-}
+}   
+
+@media(max-width: 300px){
+  .quienes-somos{
+    height: 300vh;
+  }
+  .section-hero {
+    height: 95vh;
+  }
+
+}   
